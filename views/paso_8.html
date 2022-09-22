@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../css/style.css" />
+        <title>Paso 8</title>
+    </head>
+    <!-- BODY -->
+    <body>
+        <header class="container-padding">
+            <img src="../assets/logo-azul.svg" class="logo-rus" alt="" />
+        </header>
+        <section class="progress">
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="80"
+                style="width: 100%"
+            ></div>
+        </section>
+        <main class="contenedor-main">
+            <section class="container-padding">
+                <h2 class="titulo-text">
+                    ¿Por qué valor queres asegurar tu lancha?
+                </h2>
+                <section class="d-flex justify-content-between">
+                    <div>
+                        <p class="text-min-max">Desde</p>
+                        <h3 class="price-min-max">$1.250.000</h3>
+                    </div>
+                    <div>
+                        <p class="text-min-max">Hasta</p>
+                        <h3 class="price-min-max">$6.000.000</h3>
+                    </div>
+                </section>
+                <section>
+                    <input
+                        type="range"
+                        min="1250000"
+                        max="6000000"
+                        value="1250000"
+                        class="range"
+                    />
+                    <span></span>
+                </section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 planes">
+                            <div class="container-planes">
+                                <div class="container-planes-info">
+                                    <h2 class="text-plan text-center">Plan</h2>
+                                    <h2 class="text-plan-nivel text-center">
+                                        <strong>Oro</strong>
+                                    </h2>
+                                    <h3 class="text-plan-precio text-center">
+                                        $25.000
+                                    </h3>
+                                </div>
+                                <button class="btn btn-primary btn-plan">
+                                    Contratar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 planes">
+                            <div class="container-planes">
+                                <div class="container-planes-info">
+                                    <h2 class="text-plan text-center">Plan</h2>
+                                    <h2 class="text-plan-nivel text-center">
+                                        <strong>Plata</strong>
+                                    </h2>
+                                    <h3 class="text-plan-precio text-center">
+                                        $20.000
+                                    </h3>
+                                </div>
+                                <button class="btn btn-primary btn-plan">
+                                    Contratar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 planes">
+                            <div class="container-planes">
+                                <div class="container-planes-info">
+                                    <h2 class="text-plan text-center">Plan</h2>
+                                    <h2 class="text-plan-nivel text-center">
+                                        <strong>Bronce</strong>
+                                    </h2>
+                                    <h3 class="text-plan-precio text-center">
+                                        $15.000
+                                    </h3>
+                                </div>
+                                <button class="btn btn-primary btn-plan">
+                                    Contratar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comparador">
+                    <div
+                        id="header_comparador"
+                        class="row-tabla"
+                        style="
+                            position: sticky;
+                            top: 0px;
+                            z-index: 20;
+                            background-color: white;
+                        "
+                    >
+                        <div>
+                            <span>PLAN</span>
+                            <p class="plan">Oro</p>
+                            <a
+                                href="#formulario"
+                                data-plan="0"
+                                class="btn-tabla"
+                                >Contratar</a
+                            >
+                        </div>
+                        <div>
+                            <span>PLAN</span>
+                            <p class="plan">Plata</p>
+                            <a
+                                href="#formulario"
+                                data-plan="1"
+                                class="btn-tabla"
+                                >Contratar</a
+                            >
+                        </div>
+                        <div>
+                            <span>PLAN</span>
+                            <p class="plan">Bronce</p>
+                            <a
+                                href="#formulario"
+                                data-plan="2"
+                                class="btn-tabla"
+                                >Contratar</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>
+                                Responsabilidad Civil a personas transportadas y
+                                no transportadas.
+                            </p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>
+                                Responsabilidad Civil por daños a cosas de
+                                terceros
+                            </p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>
+                                Daños totales y parciales por hundimiento,
+                                naufragio, colisión, incendio, temporal e
+                                inundación
+                            </p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Pérdida total por colisión y/o incendio.</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Incendio total y parcial.</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Robo total de la embarcación</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Robo de motor</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Robo de elementos fijos al casco</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Salvamento y gastos por salvamento</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Huelga y vandalismo</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Transporte en trailer</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Incendio en guardería.</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Rotura de palo no en regata.</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_cruz.svg" />
+                        </div>
+                    </div>
+
+                    <div class="row-tabla">
+                        <div class="txt">
+                            <p>Rotura de una hélice por vigencia anual.</p>
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                        <div class="value">
+                            <img src="../assets/icon_tilde.svg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container-padding btn-float">
+                <button class="boton-text-azul">
+                    Prefiero esperar el pago por uso
+                </button>
+            </section>
+        </main>
+
+        <!-- SCRIPTS -->
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/70658517b8.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- BOOTSTRAP -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+        <!-- SCRIPT INTERNO -->
+        <script src="../js/app.js"></script>
+    </body>
+</html>
