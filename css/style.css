@@ -87,8 +87,12 @@ html {
 /* MAIN */
 
 .over-hidden {
-    max-height: 78vh;
+    max-height: 71vh;
     overflow: scroll;
+}
+
+.paso-9 {
+    max-height: 77vh;
 }
 
 .container-padding {
@@ -105,11 +109,20 @@ html {
     border-radius: 8px;
     box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
     border: 1px solid #eaeaea;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
     width: 100%;
     background-color: transparent;
     text-align: left;
     cursor: pointer;
+}
+
+.input-text:focus {
+    border: 1px solid var(--rus-azul);
+    color: var(--rus-azul);
+}
+
+.input-text:focus-visible {
+    outline: none;
 }
 
 .selected {
@@ -242,6 +255,38 @@ html {
     border: 1px solid #eaeaea;
 }
 
+.plan-elegido {
+    border: 1px solid var(--rus-azul);
+    color: var(--rus-azul);
+    font-family: var(--tipografia);
+    font-weight: var(--tipografia-500);
+    font-size: var(--font-size-14);
+    width: 100%;
+    text-align: left;
+    padding: 8px 16px;
+    background-color: var(--rus-blanco);
+    border-radius: 8px;
+}
+
+.plan-elegido:hover {
+    border: 1px solid var(--rus-azul);
+    color: var(--rus-azul);
+}
+
+.plan-elegido-container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow-right {
+    position: absolute;
+    /* top: 12px; */
+    right: 20px;
+    font-size: var(--font-size-14);
+}
+
 /* PLANES */
 
 .planes {
@@ -338,33 +383,33 @@ html {
     margin: 15px 0px;
 }
 
-/* FOOTER */
-
 .btn-float {
     box-shadow: 0px -2px 40px rgba(146, 146, 146, 0.25);
-    position: fixed;
+    /* position: fixed;
     bottom: 0px;
     width: 100%;
-    z-index: 100;
+    z-index: 100; */
     background-color: var(--rus-blanco);
 }
 
 /* TABLA PLANES */
 
 #comparador {
-    background: #fff;
+    background-color: #fff;
     box-shadow: 0 0 8px rgb(0 0 0 / 20%);
-    padding: 30px 12px 20px;
+    padding: 0px 12px 20px;
     border-radius: 30px;
-    margin: 30px 0px 80px 0px;
+    margin: 30px 0px 0px 0px;
     position: relative;
+    max-height: 30vh;
+    overflow: scroll;
 }
 
 #comparador #header-comparador {
     margin-bottom: 0;
     border-bottom: 1px solid #ddd;
     position: sticky !important;
-    /* z-index: 1000; */
+    z-index: 1000;
     top: 10px !important;
     background: #fff;
 }
@@ -480,6 +525,66 @@ html {
     align-items: center;
 }
 
+/* ASEGURADORA */
+
+#info_organismo {
+    padding: 40px 0 50px;
+}
+
+#info_organismo #contacto_organismo {
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.no_gap {
+    grid-gap: 0;
+}
+
+#info_organismo #contacto_organismo > div {
+    grid-column: span 12;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 14px 0;
+    text-align: center;
+    font-family: var(--tipografia);
+}
+
+.txt p {
+    font-family: var(--tipografia);
+    font-size: var(--font-size-14);
+    margin-bottom: 24px;
+    color: var(--rus-negro-tipografia);
+    line-height: 2.2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background: #00239b;
+    padding: 10px 0;
+    /* margin-bottom: px; */
+}
+
+.logo-rus-footer {
+    width: 107px;
+    margin-right: 40px;
+}
+
+.contenedor-logos-footer {
+    display: flex;
+    align-items: center;
+}
+
+.logo-redes img {
+    margin: 0px 10px;
+    width: 20px;
+}
+
 @media only screen and (min-width: 560px) {
     .nav {
         width: 100%;
@@ -527,5 +632,18 @@ html {
 
     .final-exito-main {
         min-height: 36vh;
+    }
+
+    .contenedor-aseguradora {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .contenedor-logos-footer {
+        display: flex;
+        justify-content: space-between;
     }
 }
