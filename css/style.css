@@ -133,12 +133,16 @@ html {
     outline: none;
 }
 
+.input-container {
+    position: relative;
+}
+
 .check {
     font-size: var(--font-size-16);
     color: var(--rus-succes);
     position: absolute;
     top: 27px;
-    right: 10px;
+    right: 20px;
 }
 
 .titulo-text {

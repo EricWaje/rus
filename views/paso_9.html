@@ -11,7 +11,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="../css/style.css" />
-        <title>Paso 6</title>
+        <title>Paso 9</title>
     </head>
     <!-- BODY -->
     <body>
@@ -26,58 +26,71 @@
                 aria-valuenow="80"
                 aria-valuemin="0"
                 aria-valuemax="80"
-                style="width: 75%"
+                style="width: 100%"
             ></div>
         </section>
         <main class="contenedor-main">
-            <navbar class="nav container-padding">
-                <i class="fa-solid fa-angle-left left"></i>
-                <div class="container-nav">
-                    <h2 class="paso">6 de 8</h2>
-                </div>
-            </navbar>
-            <section class="container-padding">
+            <section class="container-padding over-hidden">
                 <h2 class="titulo-text">
-                    ¿Contratarías una póliza de pago por uso, considerando que
-                    actualmente no estás aseguado porque [Motivo]?
+                    ¡Ya elegiste tu plan! Compléta el formulario para finalizar
+                    la contratación
                 </h2>
 
                 <div class="input-container">
                     <input
-                        value="Lo contrataría sin dudarlo"
-                        class="input-text selected"
+                        type="text"
+                        placeholder="Nombre"
+                        class="input-text"
                         id="input"
-                        readonly
                     />
-                    <i class="fa-solid fa-check check visible" id="check"></i>
                 </div>
                 <div class="input-container">
                     <input
-                        value="Me parece complejo"
+                        type="text"
+                        placeholder="Apellido"
                         class="input-text"
                         id="input"
-                        readonly
                     />
-                    <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
-                <div class="input-container">
-                    <input
-                        value="No entiendo la cobertura"
-                        class="input-text"
-                        id="input"
-                        readonly
-                    />
-                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                <div class="telefono">
+                    <div class="input-container container-telefono">
+                        <span>0</span>
+                        <input
+                            type="number"
+                            class="input-text input-tel"
+                            id="input"
+                        />
+                    </div>
+                    <div class="input-container container-telefono">
+                        <span>15</span>
+                        <input
+                            type="number"
+                            class="input-text input-tel"
+                            id="input"
+                        />
+                    </div>
                 </div>
-                <article class="info-container">
-                    <i class="fa-solid fa-info info-logo"></i>
 
-                    <h3 class="info-text-blanco">
-                        Con una póliza de pago por uso, tendrías una cobertura
-                        básica cuando no estás navegando y tu cobertura Full
-                        cuando salís a navegar.
-                    </h3>
-                </article>
+                <div class="input-container">
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="input-text"
+                        id="input"
+                    />
+                </div>
+
+                <textarea
+                    style="resize: none"
+                    placeholder="Comentarios"
+                    class="input-text"
+                    cols="10"
+                    rows="5"
+                >
+                </textarea>
+            </section>
+            <section class="container-padding btn-float">
+                <button class="boton-text-blanco">Contratar</button>
             </section>
         </main>
 
