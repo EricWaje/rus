@@ -86,6 +86,10 @@ html {
 
 /* MAIN */
 
+.cuerpo-inputs {
+    min-height: 72vh;
+}
+
 .over-hidden {
     max-height: 71vh;
     overflow: scroll;
@@ -163,7 +167,7 @@ html {
     font-weight: var(--tipografia-500);
     font-size: var(--font-size-18);
     color: var(--rus-azul);
-    margin: 2.4rem 0rem;
+    margin: 1.2rem 0rem;
     line-height: 24px;
 }
 
@@ -215,6 +219,7 @@ html {
     color: var(--rus-azul);
     padding: 8px 14px;
     border: none;
+    border-radius: 8px;
     background-color: var(--rus-blanco);
     width: 100%;
 }
@@ -369,7 +374,7 @@ html {
     /* padding: 8px; */
     display: flex;
     align-items: flex-start;
-    margin-top: 150px;
+    margin-top: 25px;
 }
 
 .range {
@@ -390,6 +395,7 @@ html {
     width: 100%;
     z-index: 100; */
     background-color: var(--rus-blanco);
+    border-radius: 8px;
 }
 
 /* TABLA PLANES */
@@ -401,8 +407,8 @@ html {
     border-radius: 30px;
     margin: 30px 0px 0px 0px;
     position: relative;
-    max-height: 30vh;
-    overflow: scroll;
+    /* max-height: 30vh;
+    overflow: scroll; */
 }
 
 #comparador #header-comparador {
@@ -521,8 +527,10 @@ html {
 .final-exito-main {
     min-height: 76vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px 0px;
 }
 
 /* ASEGURADORA */
@@ -618,11 +626,11 @@ footer {
     }
 
     .btn-float {
-        position: fixed;
+        /* position: fixed;
         bottom: 0px;
         width: 31%;
         z-index: 100;
-        background-color: var(--rus-blanco);
+        background-color: var(--rus-blanco); */
         box-shadow: 0px 0px 0px 0px;
     }
 
