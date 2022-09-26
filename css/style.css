@@ -120,14 +120,14 @@ html {
     cursor: pointer;
 }
 
-.input-text:focus {
+/* .input-text:focus {
     border: 1px solid var(--rus-azul);
     color: var(--rus-azul);
-}
+} */
 
-.input-text:focus-visible {
+/* .input-text:focus-visible {
     outline: none;
-}
+} */
 
 .selected {
     font-family: var(--tipografia);
