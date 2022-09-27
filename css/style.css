@@ -103,6 +103,23 @@ html {
     padding: 16px 24px;
 }
 
+.btn-option {
+    font-family: var(--tipografia);
+    font-weight: var(--tipografia-400);
+    font-size: var(--font-size-14);
+    color: var(--rus-negro-tipografia);
+    padding: 8px 16px;
+    margin: 1.6rem 0rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+    border: 1px solid #eaeaea;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+
 .input-text {
     font-family: var(--tipografia);
     font-weight: var(--tipografia-400);
@@ -120,15 +137,18 @@ html {
     cursor: pointer;
 }
 
-/* .input-text:focus {
+.input-text:focus {
     border: 1px solid var(--rus-azul);
     color: var(--rus-azul);
-} */
+}
+
+.input-text:focus-visible {
+    outline: none;
+}
 
 /* .input-text:focus-visible {
     outline: none;
 } */
-
 .selected {
     font-family: var(--tipografia);
     font-weight: var(--tipografia-400);
@@ -146,11 +166,7 @@ html {
     cursor: pointer;
 }
 
-.input-text:focus-visible {
-    outline: none;
-}
-
-.input-container {
+.btn-container {
     position: relative;
 }
 
