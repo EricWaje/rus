@@ -90,14 +90,14 @@ html {
     min-height: 72vh;
 }
 
-.over-hidden {
+/* .over-hidden {
     max-height: 71vh;
     overflow: scroll;
-}
+} */
 
-.paso-9 {
+/* .paso-9 {
     max-height: 77vh;
-}
+} */
 
 .container-padding {
     padding: 16px 24px;
@@ -406,12 +406,12 @@ html {
 
 .btn-float {
     box-shadow: 0px -2px 40px rgba(146, 146, 146, 0.25);
-    /* position: fixed;
+    position: fixed;
     bottom: 0px;
     width: 100%;
-    z-index: 100; */
+    z-index: 100;
     background-color: var(--rus-blanco);
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
 
 /* TABLA PLANES */
@@ -591,7 +591,7 @@ html {
 footer {
     background: #00239b;
     padding: 10px 0;
-    /* margin-bottom: px; */
+    margin-bottom: 73px;
 }
 
 .logo-rus-footer {
@@ -642,11 +642,11 @@ footer {
     }
 
     .btn-float {
-        /* position: fixed;
-        bottom: 0px;
-        width: 31%;
-        z-index: 100;
-        background-color: var(--rus-blanco); */
+        position: relative;
+        /* bottom: 0px; */
+        width: 100%;
+        /* z-index: 100; */
+        background-color: var(--rus-blanco);
         box-shadow: 0px 0px 0px 0px;
     }
 
@@ -669,5 +669,9 @@ footer {
     .contenedor-logos-footer {
         display: flex;
         justify-content: space-between;
+    }
+
+    footer {
+        margin-bottom: 0px;
     }
 }
