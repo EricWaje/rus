@@ -10,37 +10,48 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Pago por uso</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Paso 2</title>
     </head>
     <!-- BODY -->
     <body>
-        <header class="container-padding header-exito">
+        <header class="container-padding">
             <img src="../assets/logo-azul.svg" class="logo-rus" alt="" />
         </header>
+        <section class="progress">
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="80"
+                style="width: 25%"
+            ></div>
+        </section>
         <main class="contenedor-main">
-            <section class="container-padding cuerpo-inputs-pago-por-uso">
-                <article class="container-exito">
-                    <h2 class="text-center info-hero-blanco">
-                        Estamos trabajando para disponilbilizar el nuevo
-                        producto de “pago por uso” de RUS Náutica.
-                    </h2>
-                    <h2 class="text-center info-hero-blanco mt-3">
-                        Te mantendremos al tanto del lanzamiento.
-                    </h2>
-                </article>
-                <article>
-                    <h3 class="info-text-azul">
-                        Podes comunicarte con nosotros de <br />
-                        Lunes a Viernes de 09.00 a 18.00 al <br />
-                        0800-555-5787
-                    </h3>
-                </article>
-            </section>
-            <section class="container-padding btn-float">
-                <button class="boton-text-azul">
-                    Contratar plan tradicional
-                </button>
+            <navbar class="nav container-padding">
+                <i class="fa-solid fa-angle-left left"></i>
+                <div class="container-nav">
+                    <h2 class="paso">2 de 8</h2>
+                </div>
+            </navbar>
+            <section class="container-padding cuerpo-inputs">
+                <h2 class="titulo-text">¿Qué tipo de embarcación tenes?</h2>
+                <div class="btn-container">
+                    <button class="btn-option selected">
+                        Lancha motor fuera de borda
+                    </button>
+                    <i class="fa-solid fa-check check visible" id="check"></i>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-option">Lancha con motor interno</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-option">Bote semirrígido</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
             </section>
         </main>
         <section class="container-padding back-grey">

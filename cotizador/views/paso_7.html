@@ -10,30 +10,79 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Final Exito</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Paso 7</title>
     </head>
     <!-- BODY -->
     <body>
-        <header class="container-padding header-exito">
+        <header class="container-padding">
             <img src="../assets/logo-azul.svg" class="logo-rus" alt="" />
         </header>
+        <section class="progress">
+            <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Basic example"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="80"
+                style="width: 87.5%"
+            ></div>
+        </section>
         <main class="contenedor-main">
-            <section class="container-padding">
-                <article class="container-exito">
-                    <i class="fa-solid fa-circle-check exito-check"></i>
-                    <h2 class="text-center info-hero-blanco">
-                        Un asesor se pondrá en contacto contigo a la brevedad
-                        para finalizar la contratación
-                    </h2>
-                </article>
+            <navbar class="nav container-padding">
+                <i class="fa-solid fa-angle-left left"></i>
+                <div class="container-nav">
+                    <h2 class="paso">7 de 8</h2>
+                </div>
+            </navbar>
+            <section class="container-padding mb-1 cuerpo-inputs-paso-7">
+                <h2 class="titulo-text">
+                    Para participar en el sorteo, te solicitamos algunos datos
+                    personales
+                </h2>
+
+                <div class="input-container">
+                    <input
+                        type="text"
+                        placeholder="Nombre"
+                        class="input-text"
+                    />
+                </div>
+                <div class="input-container">
+                    <input
+                        type="text"
+                        placeholder="Apellido"
+                        class="input-text"
+                    />
+                </div>
+                <div class="telefono">
+                    <div class="input-container container-telefono">
+                        <span>0</span>
+                        <input type="number" class="input-text input-tel" />
+                    </div>
+                    <div class="input-container container-telefono">
+                        <span>15</span>
+                        <input type="number" class="input-text input-tel" />
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        class="input-text"
+                        id="input"
+                    />
+                </div>
                 <article>
-                    <h3 class="info-text-azul">
-                        Podes comunicarte con nosotros de <br />
-                        Lunes a Viernes de 09.00 a 18.00 al <br />
-                        0800-555-5787
+                    <h3 class="info-text-azul text-center mt-4">
+                        No me interesa el sorteo
                     </h3>
                 </article>
+            </section>
+            <section class="container-padding btn-float">
+                <button class="boton-text-blanco">Cotizar mi seguro</button>
             </section>
         </main>
         <section class="container-padding back-grey">
@@ -152,7 +201,6 @@
                 </div>
             </section>
         </footer>
-
         <!-- SCRIPTS -->
         <!-- FONT AWESOME -->
         <script

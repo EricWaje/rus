@@ -10,8 +10,8 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Paso 3</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Paso 4</title>
     </head>
     <!-- BODY -->
     <body>
@@ -26,42 +26,60 @@
                 aria-valuenow="80"
                 aria-valuemin="0"
                 aria-valuemax="80"
-                style="width: 37.5%"
+                style="width: 50%"
             ></div>
         </section>
         <main class="contenedor-main">
             <navbar class="nav container-padding">
                 <i class="fa-solid fa-angle-left left"></i>
                 <div class="container-nav">
-                    <h2 class="paso">3 de 8</h2>
+                    <h2 class="paso">4 de 8</h2>
                 </div>
             </navbar>
-            <section class="container-padding cuerpo-inputs">
-                <h2 class="titulo-text">¿Dónde guardas tu embarcación?</h2>
+            <section class="container-padding">
+                <h2 class="titulo-text">
+                    ¿Cuántas veces al mes salis a navegar?
+                </h2>
+                <h3 class="info-text-azul">En temporada (noviembre a marzo)</h3>
                 <div class="btn-container">
-                    <button class="btn-option selected">Cama náutica</button>
-                    <i class="fa-solid fa-check check visible" id="check"></i>
-                </div>
-                <div class="btn-container">
-                    <button class="btn-option">Flotando en amarra</button>
-                    <i class="fa-solid fa-check check invisible" id="check"></i>
-                </div>
-                <div class="btn-container">
-                    <button class="btn-option">
-                        Guardería / garage con trailer
+                    <button class="btn-option selected">
+                        Entre 1 a 2 veces
                     </button>
                     <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
                 <div class="btn-container">
-                    <button class="btn-option">En domicilio</button>
+                    <button class="btn-option">Entre 3 a 4 veces</button>
+                    <i class="fa-solid fa-check check visible" id="check"></i>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-option">5 o más</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
+                <h3 class="info-text-azul">
+                    Fuera de temporada(abril a octubre)
+                </h3>
+                <div class="btn-container">
+                    <button class="btn-option">
+                        No navego fuera de temporada
+                    </button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn-option">Entre 1 a 2 veces</button>
                     <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
                 <div class="btn-container">
-                    <button class="btn-option">Otro</button>
+                    <button class="btn-option">Entre 3 a 4 veces</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-option">5 o más</button>
                     <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
             </section>
         </main>
+
         <section class="container-padding back-grey">
             <section id="info_organismo" class="contenedor-aseguradora">
                 <div class="inner">

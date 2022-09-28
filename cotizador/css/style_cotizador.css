@@ -781,4 +781,12 @@ footer {
         border-bottom: 0px;
         align-self: center;
     }
+
+    .cuerpo-inputs-paso-7 {
+        min-height: 42vh;
+    }
+
+    .cuerpo-inputs-pago-por-uso {
+        min-height: 42vh;
+    }
 }

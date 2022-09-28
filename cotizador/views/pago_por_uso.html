@@ -10,79 +10,37 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Paso 9</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Pago por uso</title>
     </head>
     <!-- BODY -->
     <body>
-        <header class="container-padding">
+        <header class="container-padding header-exito">
             <img src="../assets/logo-azul.svg" class="logo-rus" alt="" />
         </header>
-        <section class="progress">
-            <div
-                class="progress-bar"
-                role="progressbar"
-                aria-label="Basic example"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="80"
-                style="width: 100%"
-            ></div>
-        </section>
         <main class="contenedor-main">
-            <section class="container-padding paso-9">
-                <h2 class="titulo-text">
-                    ¡Ya elegiste tu plan! Compléta el formulario para finalizar
-                    la contratación
-                </h2>
-                <div class="plan-elegido-container">
-                    <button class="plan-elegido">Plan elegido</button>
-                    <i class="fa-solid fa-chevron-right arrow-right"></i>
-                </div>
-                <form action="">
-                    <div class="input-container">
-                        <input
-                            type="text"
-                            placeholder="Nombre"
-                            class="input-text"
-                        />
-                    </div>
-                    <div class="input-container">
-                        <input
-                            type="text"
-                            placeholder="Apellido"
-                            class="input-text"
-                        />
-                    </div>
-                    <div class="telefono">
-                        <div class="input-container container-telefono">
-                            <span>0</span>
-                            <input type="number" class="input-text input-tel" />
-                        </div>
-                        <div class="input-container container-telefono">
-                            <span>15</span>
-                            <input type="number" class="input-text input-tel" />
-                        </div>
-                    </div>
-                    <div class="input-container">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            class="input-text"
-                        />
-                    </div>
-                    <textarea
-                        style="resize: none"
-                        placeholder="Comentarios"
-                        class="input-text"
-                        cols="10"
-                        rows="5"
-                    >
-                    </textarea>
-                </form>
+            <section class="container-padding cuerpo-inputs-pago-por-uso">
+                <article class="container-exito">
+                    <h2 class="text-center info-hero-blanco">
+                        Estamos trabajando para disponilbilizar el nuevo
+                        producto de “pago por uso” de RUS Náutica.
+                    </h2>
+                    <h2 class="text-center info-hero-blanco mt-3">
+                        Te mantendremos al tanto del lanzamiento.
+                    </h2>
+                </article>
+                <article>
+                    <h3 class="info-text-azul">
+                        Podes comunicarte con nosotros de <br />
+                        Lunes a Viernes de 09.00 a 18.00 al <br />
+                        0800-555-5787
+                    </h3>
+                </article>
             </section>
             <section class="container-padding btn-float">
-                <button class="boton-text-blanco">Contratar</button>
+                <button class="boton-text-azul">
+                    Contratar plan tradicional
+                </button>
             </section>
         </main>
         <section class="container-padding back-grey">
@@ -201,6 +159,7 @@
                 </div>
             </section>
         </footer>
+
         <!-- SCRIPTS -->
         <!-- FONT AWESOME -->
         <script

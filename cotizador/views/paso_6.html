@@ -10,8 +10,8 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Paso 7</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Paso 6</title>
     </head>
     <!-- BODY -->
     <body>
@@ -26,63 +26,45 @@
                 aria-valuenow="80"
                 aria-valuemin="0"
                 aria-valuemax="80"
-                style="width: 87.5%"
+                style="width: 75%"
             ></div>
         </section>
         <main class="contenedor-main">
             <navbar class="nav container-padding">
                 <i class="fa-solid fa-angle-left left"></i>
                 <div class="container-nav">
-                    <h2 class="paso">7 de 8</h2>
+                    <h2 class="paso">6 de 8</h2>
                 </div>
             </navbar>
-            <section class="container-padding mb-1 cuerpo-inputs-paso-7">
+            <section class="container-padding">
                 <h2 class="titulo-text">
-                    Para participar en el sorteo, te solicitamos algunos datos
-                    personales
+                    ¿Contratarías una póliza de pago por uso, considerando que
+                    actualmente no estás aseguado porque [Motivo]?
                 </h2>
 
-                <div class="input-container">
-                    <input
-                        type="text"
-                        placeholder="Nombre"
-                        class="input-text"
-                    />
+                <div class="btn-container">
+                    <button class="btn-option selected">
+                        Lo contrataría sin dudarlo
+                    </button>
+                    <i class="fa-solid fa-check check visible" id="check"></i>
                 </div>
-                <div class="input-container">
-                    <input
-                        type="text"
-                        placeholder="Apellido"
-                        class="input-text"
-                    />
+                <div class="btn-container">
+                    <button class="btn-option">Me parece complejo</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
-                <div class="telefono">
-                    <div class="input-container container-telefono">
-                        <span>0</span>
-                        <input type="number" class="input-text input-tel" />
-                    </div>
-                    <div class="input-container container-telefono">
-                        <span>15</span>
-                        <input type="number" class="input-text input-tel" />
-                    </div>
+                <div class="btn-container">
+                    <button class="btn-option">No entiendo la cobertura</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
+                <article class="info-container">
+                    <i class="fa-solid fa-info info-logo"></i>
 
-                <div class="input-container">
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        class="input-text"
-                        id="input"
-                    />
-                </div>
-                <article>
-                    <h3 class="info-text-azul text-center mt-4">
-                        No me interesa el sorteo
+                    <h3 class="info-text-blanco">
+                        Con una póliza de pago por uso, tendrías una cobertura
+                        básica cuando no estás navegando y tu cobertura Full
+                        cuando salís a navegar.
                     </h3>
                 </article>
-            </section>
-            <section class="container-padding btn-float">
-                <button class="boton-text-blanco">Cotizar mi seguro</button>
             </section>
         </main>
         <section class="container-padding back-grey">
@@ -201,6 +183,7 @@
                 </div>
             </section>
         </footer>
+
         <!-- SCRIPTS -->
         <!-- FONT AWESOME -->
         <script

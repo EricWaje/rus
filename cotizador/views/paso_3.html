@@ -10,8 +10,8 @@
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/style.css" />
-        <title>Paso 6</title>
+        <link rel="stylesheet" href="../css/style_cotizador.css" />
+        <title>Paso 3</title>
     </head>
     <!-- BODY -->
     <body>
@@ -26,45 +26,40 @@
                 aria-valuenow="80"
                 aria-valuemin="0"
                 aria-valuemax="80"
-                style="width: 75%"
+                style="width: 37.5%"
             ></div>
         </section>
         <main class="contenedor-main">
             <navbar class="nav container-padding">
                 <i class="fa-solid fa-angle-left left"></i>
                 <div class="container-nav">
-                    <h2 class="paso">6 de 8</h2>
+                    <h2 class="paso">3 de 8</h2>
                 </div>
             </navbar>
-            <section class="container-padding">
-                <h2 class="titulo-text">
-                    ¿Contratarías una póliza de pago por uso, considerando que
-                    actualmente no estás aseguado porque [Motivo]?
-                </h2>
-
+            <section class="container-padding cuerpo-inputs">
+                <h2 class="titulo-text">¿Dónde guardas tu embarcación?</h2>
                 <div class="btn-container">
-                    <button class="btn-option selected">
-                        Lo contrataría sin dudarlo
-                    </button>
+                    <button class="btn-option selected">Cama náutica</button>
                     <i class="fa-solid fa-check check visible" id="check"></i>
                 </div>
                 <div class="btn-container">
-                    <button class="btn-option">Me parece complejo</button>
+                    <button class="btn-option">Flotando en amarra</button>
                     <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
                 <div class="btn-container">
-                    <button class="btn-option">No entiendo la cobertura</button>
+                    <button class="btn-option">
+                        Guardería / garage con trailer
+                    </button>
                     <i class="fa-solid fa-check check invisible" id="check"></i>
                 </div>
-                <article class="info-container">
-                    <i class="fa-solid fa-info info-logo"></i>
-
-                    <h3 class="info-text-blanco">
-                        Con una póliza de pago por uso, tendrías una cobertura
-                        básica cuando no estás navegando y tu cobertura Full
-                        cuando salís a navegar.
-                    </h3>
-                </article>
+                <div class="btn-container">
+                    <button class="btn-option">En domicilio</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-option">Otro</button>
+                    <i class="fa-solid fa-check check invisible" id="check"></i>
+                </div>
             </section>
         </main>
         <section class="container-padding back-grey">
