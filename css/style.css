@@ -90,9 +90,13 @@ html {
     min-height: 90vh;
 }
 
-/* .cuerpo-inputs {
+.cuerpo-inputs-paso-7 {
     min-height: 82vh;
-} */
+}
+
+.cuerpo-inputs-pago-por-uso {
+    min-height: 82vh;
+}
 
 /* .over-hidden {
     max-height: 71vh;
