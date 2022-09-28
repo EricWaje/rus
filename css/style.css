@@ -90,9 +90,9 @@ html {
     min-height: 90vh;
 }
 
-.cuerpo-inputs {
-    /* min-height: 82vh; */
-}
+/* .cuerpo-inputs {
+    min-height: 82vh;
+} */
 
 /* .over-hidden {
     max-height: 71vh;
