@@ -431,6 +431,7 @@ html {
 
 .range {
     width: 100%;
+    /* position: relative; */
 }
 
 .range .sliderValue {
@@ -441,7 +442,7 @@ html {
 .range .sliderValue span {
     position: absolute;
     bottom: -55px;
-    left: 162px;
+    left: 50%;
     width: 120px;
     height: 35px;
     background: #ee7a2f;
