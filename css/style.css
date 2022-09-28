@@ -427,6 +427,71 @@ html {
     /* border-radius: 8px; */
 }
 
+/* INPUT RANGE ASEGUADOR */
+
+.range {
+    width: 100%;
+}
+
+.range .sliderValue {
+    position: relative;
+    width: 100%;
+}
+
+.range .sliderValue span {
+    position: absolute;
+    bottom: -55px;
+    left: 162px;
+    width: 120px;
+    height: 35px;
+    background: #ee7a2f;
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    font-size: var(--font-size-12);
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field .value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.range .field input {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 100%;
+    background-color: #dee9ff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+.range .field input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #0057ff;
+    border: 1px solid #664aff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 /* TABLA PLANES */
 
 #comparador {
